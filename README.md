@@ -1,6 +1,6 @@
 ## An SDP-based Branch-and-Cut Algorithm for Biclustering
 
-**BICL-SDP** is an exact algorithm, based on the branch-and-cut technique, for solving the biclustering problem through the $k$-densest-disjoint biclique criterion described in the paper ["An SDP-based Branch-and-Cut Algorithm for Biclustering"](). This repository contains the C++ source code, the MATLAB scripts, and the datasets used for the experiments.
+**BICL-SDP** is an exact algorithm, based on the branch-and-cut technique, for solving the biclustering problem through the $k$-densest-disjoint biclique criterion described in the paper ["An SDP-based Branch-and-Cut Algorithm for Biclustering"](https://arxiv.org/abs/2403.11351). This repository contains the C++ source code, the MATLAB scripts, and the datasets used for the experiments.
 
 ## Installation
 **BICL-SDP** calls the semidefinite programming solver [SDPNAL+](https://blog.nus.edu.sg/mattohkc/softwares/sdpnalplus/) by using the [MATLAB Engine API](https://www.mathworks.com/help/matlab/calling-matlab-engine-from-cpp-programs.html) for C++. It requires the MATLAB engine library *libMatlabEngine* and the Matlab Data Array library *libMatlabDataArray*. **BICL-SDP** calls the linear programming solver [Gurobi](https://www.gurobi.com/) and uses [Armadillo](http://arma.sourceforge.net/) to handle matrices and linear algebra operations efficiently.
